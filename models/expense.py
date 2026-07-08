@@ -93,25 +93,3 @@ class Expense:
             table.add_row(item.values())
         print(table)
 
-'''
-    def run(self):
-
-        parser = argparse.ArgumentParser(description="ExpenseTracker")
-
-        parser.add_argument('option', choices=['add', 'show','delete'])
-        args = parser.parse_args()
-
-        if args.option == "add":
-            self.get_expense_info()
-            self.update_json_db()
-
-        if args.option == "show":
-            self.show_expenses()
-
-
-
-
-if __name__ == "__main__":
-    app = Expense()
-    app.run()
-'''

@@ -60,8 +60,7 @@ class Reports:
                         report_tbl.append(data)
                         self.total = self.total + int(data.get('amount'))
 
-            # report_tbl.append({'Total':self.total})
-            #print(report_tbl)
+
                 table = PrettyTable()
 
                 if len(report_tbl) > 0 :
@@ -78,6 +77,3 @@ class Reports:
             print(f"Something wrong with the JSON file: {e}")
 
 
-
-#c1 = Reports()
-#c1.monthly_report()
